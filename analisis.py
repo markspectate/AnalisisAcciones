@@ -31,8 +31,8 @@ if not datos.empty:
     plt.show()
 else:
     print("No hay datos para graficar.")# Calcular medias móviles
-media_corto_plazo = datos.rolling(window=20).mean()  # Media móvil de 20 días
-media_largo_plazo = datos.rolling(window=50).mean()  # Media móvil de 50 días
+media_corto_plazo = datos.rolling(window=20).mean()  
+media_largo_plazo = datos.rolling(window=50).mean()  
 
 # las WMA 
 plt.figure(figsize=(14, 7))
