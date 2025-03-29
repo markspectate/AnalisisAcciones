@@ -1,12 +1,12 @@
-# Roadmap del Proyecto: Análisis de Acciones con Python
+# Roadmap 
 
-## Etapa 1: Configuración inicial (✅ Completada)
+## Etapa 1: Configuración inicial (Completada)
 - [x] Crear el repositorio en GitHub.
 - [x] Configurar entorno virtual en Python.
 - [x] Instalar librerías (`pandas`, `matplotlib`, `yfinance`).
 - [x] Descargar datos históricos de acciones.
 
-## Etapa 2: Análisis de datos (✅ Completada)
+## Etapa 2: Análisis de datos (Completada)
 - [x] Calcular rendimiento y volatilidad de las acciones.
 - [x] Graficar precios ajustados de cierre.
 - [x] Implementar medias móviles (20 y 50 días).
