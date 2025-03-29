@@ -1,19 +1,19 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Cargar datos
+
 try:
     datos = pd.read_csv("rendimiento_acciones.csv", index_col=0, parse_dates=True)
     print("Datos cargados con éxito:")
-    print(datos.head())  # Verifica las primeras filas
+    print(datos.head())  
 except FileNotFoundError:
     print("Error: El archivo 'rendimiento_acciones.csv' no existe.")
     exit()
 
-# Eliminar valores nulos (si los hay)
+
 datos = datos.dropna()
 
-# Calcular rendimiento diario
+
 rendimiento = datos.pct_change()
 
 # Calcular métricas clave
@@ -34,7 +34,7 @@ else:
 media_corto_plazo = datos.rolling(window=20).mean()  # Media móvil de 20 días
 media_largo_plazo = datos.rolling(window=50).mean()  # Media móvil de 50 días
 
-# Visualizar los datos con medias móviles
+# las WMA 
 plt.figure(figsize=(14, 7))
 for columna in datos.columns:
     plt.plot(datos.index, datos[columna], label=f"{columna} - Precios ajustados")
